@@ -5,5 +5,7 @@ public class StrategyPattern {
 		System.out.println("Hello Strategy Pattern!");
 		
 		System.out.println("Another line");
+
+		System.out.println("A third line");
 	}
 }
