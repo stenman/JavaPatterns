@@ -34,19 +34,16 @@ public class StockGrabber implements Subject {
 		}
 	}
 
-	@Override
 	public void setIBMPrice(double newIBMPrice) {
 		this.ibmPrice = newIBMPrice;
 		notifyObservers();
 	}
 
-	@Override
 	public void setGOOGPrice(double newGOOGPrice) {
 		this.googPrice = newGOOGPrice;
 		notifyObservers();
 	}
 
-	@Override
 	public void setAAPLPrice(double newAAPLPrice) {
 		this.aaplPrice = newAAPLPrice;
 		notifyObservers();

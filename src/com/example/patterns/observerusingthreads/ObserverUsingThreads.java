@@ -3,7 +3,7 @@ package com.example.patterns.observerusingthreads;
 public class ObserverUsingThreads {
 
 	public static void main(String args[]) {
-		Subject stockGrabber = new StockGrabber();
+		StockGrabber stockGrabber = new StockGrabber();
 
 		Observer stockObserver1 = new StockObserver(stockGrabber);
 

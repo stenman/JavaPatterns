@@ -6,7 +6,7 @@ public class FuelPriceObserver implements Observer {
 	private double diesel;
 	private double ethanol;
 
-	Subject fuelPriceGrabber;
+	private Subject fuelPriceGrabber;
 
 	private static int observerIdTracker = 0;
 	private int observerId;

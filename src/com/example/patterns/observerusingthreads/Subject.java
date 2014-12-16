@@ -6,10 +6,4 @@ public interface Subject {
 	public void unRegister(Observer o);
 
 	public void notifyObservers();
-
-	public void setIBMPrice(double newIBMPrice);
-
-	public void setGOOGPrice(double newGOOGPrice);
-
-	public void setAAPLPrice(double newAAPLPrice);
 }

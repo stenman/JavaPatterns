@@ -10,9 +10,9 @@ public class GetTheStock implements Runnable {
 	private String stock;
 	private double price;
 
-	private Subject stockGrabber;
+	private StockGrabber stockGrabber;
 
-	public GetTheStock(Subject stockGrabber, int newStartTime, String newStock, double newPrice) {
+	public GetTheStock(StockGrabber stockGrabber, int newStartTime, String newStock, double newPrice) {
 		this.stockGrabber = stockGrabber;
 		this.startTime = newStartTime;
 		this.stock = newStock;
@@ -29,8 +29,6 @@ public class GetTheStock implements Runnable {
 			}
 
 			double randNum = (Math.random() * (.06)) - .03;
-
-			// DecimalFormat df = new DecimalFormat("#.##");
 
 			NumberFormat nf = NumberFormat.getNumberInstance(Locale.ENGLISH);
 			DecimalFormat df = (DecimalFormat) nf;

@@ -4,7 +4,7 @@ public class ObserverPattern {
 
 	public static void main(String[] args) {
 
-		Subject fuelPriceGrabber = new FuelPriceGrabber();
+		FuelPriceGrabber fuelPriceGrabber = new FuelPriceGrabber();
 
 		Observer fuelPriceObserver1 = new FuelPriceObserver(fuelPriceGrabber);
 

@@ -6,10 +6,4 @@ public interface Subject {
 	public void unRegister(Observer o);
 
 	public void notifyObservers();
-
-	public void setGasolinePrice(double newGasolinePrice);
-
-	public void setDieselPrice(double newDieselPrice);
-
-	public void setEthanolPrice(double newEthanolPrice);
 }
