@@ -6,7 +6,7 @@ public class FactoryPattern {
 
 	public static void main(String[] args) {
 
-		AutoMobileFactory autoMobile = new AutoMobileFactory();
+		AutoMobileFactory autoMobileFactory = new AutoMobileFactory();
 
 		AutoMobile vehicle = null;
 
@@ -24,7 +24,7 @@ public class FactoryPattern {
 				break;
 			}
 
-			vehicle = autoMobile.makeAutoMobile(typeOfVehicle);
+			vehicle = autoMobileFactory.makeAutoMobile(typeOfVehicle);
 
 			if (vehicle != null) {
 				doStuffVehicle(vehicle);

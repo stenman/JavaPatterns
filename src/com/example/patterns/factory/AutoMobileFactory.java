@@ -4,15 +4,18 @@ public class AutoMobileFactory {
 
 	public AutoMobile makeAutoMobile(String vehicleName) {
 
+		AutoMobile autoMobile = null;
+
 		if (vehicleName.equalsIgnoreCase("RaceCar")) {
-			return new RaceCar();
+			autoMobile = new RaceCar();
 		} else if (vehicleName.equalsIgnoreCase("MotorCycle")) {
-			return new MotorCycle();
+			autoMobile = new MotorCycle();
 		} else if (vehicleName.equalsIgnoreCase("Truck")) {
-			return new Truck();
+			autoMobile = new Truck();
 		} else if (vehicleName.equalsIgnoreCase("Tractor")) {
-			return new Tractor();
+			autoMobile = new Tractor();
 		}
-		return null;
+
+		return autoMobile;
 	}
 }
