@@ -1,6 +1,6 @@
 package com.example.patterns.factory;
 
-public abstract class WheelDrivenVehicle {
+public abstract class AutoMobile {
 	private String name;
 	private int maxSpeedInKmh;
 

@@ -1,8 +1,8 @@
 package com.example.patterns.factory;
 
-public class WheelDrivenVehicleFactory {
+public class AutoMobileFactory {
 
-	public WheelDrivenVehicle makeWheelDrivenVehicle(String vehicleName) {
+	public AutoMobile makeAutoMobile(String vehicleName) {
 
 		if (vehicleName.equalsIgnoreCase("RaceCar")) {
 			return new RaceCar();

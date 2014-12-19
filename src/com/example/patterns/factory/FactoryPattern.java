@@ -6,9 +6,9 @@ public class FactoryPattern {
 
 	public static void main(String[] args) {
 
-		WheelDrivenVehicleFactory wheelDrivenVehicleFactory = new WheelDrivenVehicleFactory();
+		AutoMobileFactory autoMobile = new AutoMobileFactory();
 
-		WheelDrivenVehicle vehicle = null;
+		AutoMobile vehicle = null;
 
 		Scanner userInput = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class FactoryPattern {
 				break;
 			}
 
-			vehicle = wheelDrivenVehicleFactory.makeWheelDrivenVehicle(typeOfVehicle);
+			vehicle = autoMobile.makeAutoMobile(typeOfVehicle);
 
 			if (vehicle != null) {
 				doStuffVehicle(vehicle);
@@ -34,7 +34,7 @@ public class FactoryPattern {
 		}
 	}
 
-	public static void doStuffVehicle(WheelDrivenVehicle vehicle) {
+	public static void doStuffVehicle(AutoMobile vehicle) {
 		vehicle.accelerateToMaxSpeed();
 		vehicle.brake();
 	}
