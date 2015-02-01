@@ -3,13 +3,20 @@ package com.example.patterns.abstractfactory;
 public class AbstractFactoryPattern {
 
 	public static void main(String[] args) {
-		VehicleBuilding MakeLandVehicles = new LandVehicleBuilding();
+		VehicleBuilding makeLandVehicles = new LandVehicleBuilding();
+		VehicleBuilding makeWaterVehicles = new WaterVehicleBuilding();
 
-		Vehicle car = MakeLandVehicles.orderTheVehicle("Car");
+		Vehicle car = makeLandVehicles.orderTheVehicle("Car");
 		System.out.println(car + "\n");
 
-		Vehicle motorcycle = MakeLandVehicles.orderTheVehicle("Motorcycle");
+		Vehicle motorcycle = makeLandVehicles.orderTheVehicle("Motorcycle");
 		System.out.println(motorcycle + "\n");
+
+		Vehicle powerBoat = makeWaterVehicles.orderTheVehicle("PowerBoat");
+		System.out.println(powerBoat + "\n");
+
+		Vehicle sailBoat = makeWaterVehicles.orderTheVehicle("SailBoat");
+		System.out.println(sailBoat + "\n");
 	}
 
 }

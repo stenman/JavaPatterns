@@ -9,7 +9,7 @@ public class SailBoat extends Vehicle {
 
 	@Override
 	void makeVehicle() {
-		System.out.println("Making vahicle " + getName());
+		System.out.println("Making vehicle " + getName());
 
 		steeringDevice = vehicleFactory.addSteeringDevice();
 		acceleratorDevice = vehicleFactory.addAcceleratorDevice();

@@ -19,7 +19,7 @@ public abstract class Vehicle {
 	abstract void makeVehicle();
 
 	public void fullThrottle() {
-		System.out.println("The " + getName() + " is accelerates by using " + acceleratorDevice + " and reached the top speed of " + topSpeed + ".");
+		System.out.println("The " + getName() + " accelerates by using " + acceleratorDevice + " and reaches the top speed of " + topSpeed + ".");
 	}
 
 	public void makeUTurn() {
