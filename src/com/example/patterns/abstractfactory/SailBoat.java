@@ -12,7 +12,7 @@ public class SailBoat extends Vehicle {
 		System.out.println("Making vahicle " + getName());
 
 		steeringDevice = vehicleFactory.addSteeringDevice();
-		throttleDevice = vehicleFactory.addThrottleDevice();
+		acceleratorDevice = vehicleFactory.addAcceleratorDevice();
 		brakeDevice = vehicleFactory.addBrakeDevice();
 		topSpeed = vehicleFactory.addTopSpeed();
 	}

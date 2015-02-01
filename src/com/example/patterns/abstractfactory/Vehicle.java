@@ -5,7 +5,7 @@ public abstract class Vehicle {
 
 	VBrakeDevice brakeDevice;
 	VSteeringDevice steeringDevice;
-	VThrottleDevice throttleDevice;
+	VAcceleratorDevice acceleratorDevice;
 	VTopSpeed topSpeed;
 
 	public String getName() {
@@ -19,7 +19,7 @@ public abstract class Vehicle {
 	abstract void makeVehicle();
 
 	public void fullThrottle() {
-		System.out.println("The " + getName() + " is accelerates by using " + throttleDevice + " and reached the top speed of " + topSpeed + ".");
+		System.out.println("The " + getName() + " is accelerates by using " + acceleratorDevice + " and reached the top speed of " + topSpeed + ".");
 	}
 
 	public void makeUTurn() {
@@ -31,7 +31,7 @@ public abstract class Vehicle {
 	}
 
 	public String toString() {
-		String infoOnVehicle = "The " + name + " has a top speed of " + topSpeed + ", uses " + throttleDevice + " as throttle device and uses "
+		String infoOnVehicle = "The " + name + " has a top speed of " + topSpeed + ", uses " + acceleratorDevice + " as accelerator device and uses "
 				+ steeringDevice + " as steering device.";
 		return infoOnVehicle;
 	}

@@ -1,6 +1,6 @@
 package com.example.patterns.abstractfactory;
 
-public class VCarThrottleDevice implements VThrottleDevice{
+public class VCarAcceleratorDevice implements VAcceleratorDevice{
 	public String toString() {
 		return "gas pedal";
 	}

@@ -13,8 +13,8 @@ public class MotorcycleVehicleFactory implements VehicleFactory {
 	}
 
 	@Override
-	public VThrottleDevice addThrottleDevice() {
-		return new VMotorcycleThrottleDevice();
+	public VAcceleratorDevice addAcceleratorDevice() {
+		return new VMotorcycleAcceleratorDevice();
 	}
 
 	@Override

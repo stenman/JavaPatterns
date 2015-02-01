@@ -13,8 +13,8 @@ public class SailBoatVehicleFactory implements VehicleFactory {
 	}
 
 	@Override
-	public VThrottleDevice addThrottleDevice() {
-		return new VSailBoatThrottleDevice();
+	public VAcceleratorDevice addAcceleratorDevice() {
+		return new VSailBoatAcceleratorDevice();
 	}
 
 	@Override

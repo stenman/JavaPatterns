@@ -1,5 +1,5 @@
 package com.example.patterns.abstractfactory;
 
-public interface VThrottleDevice {
+public interface VAcceleratorDevice {
 	public String toString();
 }

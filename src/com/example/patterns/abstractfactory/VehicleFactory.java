@@ -5,7 +5,7 @@ public interface VehicleFactory {
 
 	public VBrakeDevice addBrakeDevice();
 
-	public VThrottleDevice addThrottleDevice();
+	public VAcceleratorDevice addAcceleratorDevice();
 
 	public VTopSpeed addTopSpeed();
 }

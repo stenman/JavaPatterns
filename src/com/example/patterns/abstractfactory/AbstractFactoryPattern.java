@@ -5,11 +5,11 @@ public class AbstractFactoryPattern {
 	public static void main(String[] args) {
 		VehicleBuilding MakeLandVehicles = new LandVehicleBuilding();
 
-		Vehicle v70 = MakeLandVehicles.makeVehicle("Car");
-		System.out.println(v70 + "\n");
+		Vehicle car = MakeLandVehicles.makeVehicle("Car");
+		System.out.println(car + "\n");
 
-		Vehicle ducati = MakeLandVehicles.makeVehicle("Motorcycle");
-		System.out.println(ducati + "\n");
+		Vehicle motorcycle = MakeLandVehicles.makeVehicle("Motorcycle");
+		System.out.println(motorcycle + "\n");
 	}
 
 }
