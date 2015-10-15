@@ -1,10 +1,10 @@
 package com.example.patterns.strategy;
 
-public class CanNotFly implements Flies{
+public class CanNotFly implements Flies {
 
-	@Override
-	public String fly() {
-		return "Sorry, earthbound!";
-	}
+    @Override
+    public String fly() {
+        return "Sorry, earthbound!";
+    }
 
 }

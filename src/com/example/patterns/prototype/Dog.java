@@ -2,28 +2,28 @@ package com.example.patterns.prototype;
 
 public class Dog implements Animal {
 
-	public Dog() {
-		System.out.println("A dog was made");
-	}
+    public Dog() {
+        System.out.println("A dog was made");
+    }
 
-	@Override
-	public Animal makeClone() {
+    @Override
+    public Animal makeClone() {
 
-		System.out.println("Making dog clone");
+        System.out.println("Making dog clone");
 
-		Dog clone = null;
+        Dog clone = null;
 
-		try {
-			clone = (Dog) super.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-		}
+        try {
+            clone = (Dog) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
-		return clone;
-	}
+        return clone;
+    }
 
-	public String saySomething() {
-		return "Yay! I'm a dog!";
-	}
+    public String saySomething() {
+        return "Yay! I'm a dog!";
+    }
 
 }
